@@ -1,0 +1,123 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+#user-view {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+h2 {
+  transform: scaleY(1.5);
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 1px;
+}
+.showcase {
+  margin-top: -600px;
+}
+.box1,
+.box2,
+.box3,
+.box4 {
+  height: 650px;
+}
+.thread-a {
+  border-top: solid 0.1px #00000066;
+  border-bottom: solid 0.1px #00000066;
+}
+.rotate {
+  transform: rotate(180deg);
+  transition: ease-in-out 0.4s;
+}
+.select1,
+.select2 {
+  text-align: end;
+  overflow: hidden;
+}
+.thread-article {
+  border-bottom: 1px solid gray;
+}
+.box3,
+.box4 {
+  overflow-y: scroll;
+}
+.thread-head {
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+.thread-article {
+  position: sticky;
+  top: 50px;
+  z-index: 1;
+}
+
+.hide {
+  display: none;
+  transition: ease-in-out 0.2s;
+}
+.float-icon {
+  position: sticky;
+  bottom: 0px;
+}
+.float-icon-body {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  /* z-index: 999; */
+}
+.journey-board {
+  margin-top: 90px;
+  height: 80vh;
+  position: absolute;
+  top: 0;
+  left: 300;
+  z-index: 9;
+}
+
+.moving-out {
+  width: 28%;
+  transition: ease-in-out 0.5s;
+  position: sticky;
+  top: 90px;
+}
+.moving-in {
+  width: 5%;
+  transition: ease-in-out 0.5s;
+  position: sticky;
+  top: 90px;
+}
+.moving-in .board-text {
+  display: none;
+}
+.moving-in ul {
+  display: none;
+}
+@media (max-width: 480px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .brand-logo {
+    width: 150px;
+  }
+  .box2 {
+    height: 700px;
+    margin-top: 30px;
+  }
+  .float-icon {
+    display: none;
+  }
+  .showcase {
+    margin-top: -500px;
+  }
+}

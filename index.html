@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style type="text/taiwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              white: "#FFFFFF",
+              grayWhite: "#FDFDFD",
+              gray: "#F0F0F0",
+              grayLike: "#F2F2F2",
+              blue: "#0029FF",
+              gray: "#E9ECEF",
+              black: "#000",
+              thread: "#feffc033",
+            },
+          },
+        },
+      };
+    </script>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="script.js" defer></script>
+    <title>Deep Thought</title>
+  </head>
+
+  <body class="bg-white">
+    <nav
+      class="bg-gray lg:px-16 px-5 py-4 lg:flex items-center lg:justify-between shadow-2xl"
+    >
+      <div>
+        <img src="./asset/logo 1.svg" alt="" class="brand-logo" />
+      </div>
+
+      <div class="nav-liks flex items-center lg:gap-5 gap-2">
+        <a href=""><img src="./asset/Home.svg" alt="" id="home" /></a>
+        <a href=""
+          ><img src="./asset/edit-profile.svg" alt="" id="edit profile"
+        /></a>
+        <a href=""
+          ><img src="./asset/notification.svg" alt="" id="notification"
+        /></a>
+        <a href=""><img src="./asset/user.jpg" alt="" id="user-view" /></a>
+        <a href=""><img src="./asset/3dot.svg" alt="" id="more" /></a>
+      </div>
+    </nav>
+
+    <div class="journey-board moving-in bg-white rounded-r-2xl shadow-lg mr-40">
+      <div
+        class="journey-board-head bg-black rounded-tr-2xl rounded-b-0 px-3 py-3 text-white flex justify-between"
+      >
+        <p class="text-3xl board-text">Journey Board</p>
+        <p
+          class="journey-board-btn bg-white w-10 h-10 rounded-[50%] text-black flex justify-center items-center text-3xl text-right"
+        >
+          &rarr;
+        </p>
+      </div>
+      <div class="journey-board-body">
+        <ul class="pl-10 py-5 grid gap-3 list-disc">
+          <li class="font-bold text-lg">Explore the world of management</li>
+          <li>Technical Project Management</li>
+          <li>Threadbuild</li>
+          <li>Structure you pointers</li>
+          <li>4SA Method</li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="lg:px-24 px-5 showcase" id="section1">
+      <div class="flex items-center justify-between">
+        <h2 class="text-4xl text-blue font-bold">
+          Technical Project Management
+        </h2>
+        <button class="bg-blue px-7 py-3 text-xs text-white rounded-2xl">
+          Submit task
+        </button>
+      </div>
+
+      <div class="bg-gray mt-12 p-8 rounded-lg">
+        <p class="text-2xl font-bold">Explore the world of management</p>
+        <p class="mt-5 text-sm font-light">
+          As a project manager, you play an important reole in leading a project
+          through initiation, planning, execution, monitoring, controlling and
+          completion. How? Do you want to manage each and every step of your
+          life?
+        </p>
+      </div>
+    </section>
+
+    <section class="box lg:px-32 px-5 mb-10 mt-16 lg:flex items-center gap-10">
+      <div class="box1 lg:w-1/2 bg-grayWhite shadow-2xl rounded-2xl">
+        <div class="bg-black py-3 px-5 rounded-t-2xl">
+          <p class="text-white text-lg text-center">
+            Technical Project Management
+          </p>
+          <img src="./asset/more.svg" alt="know-more" class="ml-auto -mt-5" />
+        </div>
+        <div>
+          <p class="px-3 py-4 font-light">
+            <span class="font-bold">Description:</span> Story of Alignment Scope
+            of Agility Specific Accountable Staggering Approach
+          </p>
+
+          <div class="video">
+            <iframe
+              width="100%"
+              height="315"
+              src="https://www.youtube.com/embed/TiMRwri1xJ8"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="box2 lg:w-1/2 bg-grayWhite shadow-2xl rounded-2xl">
+        <div class="bg-black py-3 px-5 rounded-t-2xl">
+          <p class="text-white text-lg text-center">Threadbuild</p>
+          <img src="./asset/more.svg" alt="know-more" class="ml-auto -mt-5" />
+        </div>
+        <div class="">
+          <p class="px-3 py-4 font-light">
+            <span class="font-bold">Description:</span>Watch the video and
+            threadbuild, and jot out key threads while watching the videoh
+          </p>
+        </div>
+        <div class="thread-a py-4 px-5 bg-thread flex items-center">
+          <img
+            src="./asset/Vector.svg"
+            alt="drop-vector"
+            class="thread-click"
+          />
+          <p class="text-2xl font-bold ml-20">Thread A</p>
+        </div>
+
+        <div class="lg:px-10 px-3 mt-5 flex items-center gap-5">
+          <div class="w-1/2">
+            <div class="bg-grayLike rounded-3xl shadow-lg">
+              <p class="mb-3 pl-5 text-xs">Sub thread 1</p>
+              <textarea
+                name="sub_thread1"
+                id="sub_thread1"
+                cols="18"
+                rows="4"
+                placeholder="Enter Text here"
+                class="bg-wwhite w-full pl-5 pt-3 rounded-3xl"
+              ></textarea>
+            </div>
+
+            <div class="edit-icon mt-4 text-end p-2">
+              <a href=""><i class="fa-solid fa-lightbulb mr-3"></i></a>
+              <a href=""><i class="fa-solid fa-message mr-3"></i></a>
+              <a href=""
+                ><i class="fa-sharp fa-solid fa-square-envelope mr-3"></i
+              ></a>
+              <a href=""><i class="fa-solid fa-message mr-3"></i></a>
+            </div>
+          </div>
+
+          <div class="w-1/2">
+            <div class="bg-grayLike rounded-3xl shadow-lg">
+              <p class="mb-3 pl-5 text-xs">Sub Interpretation 1</p>
+              <textarea
+                name="sub_thread1"
+                id="sub_thread1"
+                cols="18"
+                rows="4"
+                placeholder="Enter Text here"
+                class="bg-wwhite w-full pl-5 pt-3 rounded-3xl"
+              ></textarea>
+            </div>
+
+            <div class="select flex justify-between items-center p-2 gap-5">
+              <div class="select1 bg-white w-1/2 text-xs p-2 shadow-lg">
+                <select name="selet_category" id="selet_category">
+                  <option value="select">Select Cetegory</option>
+                  <option value="select">Remark</option>
+                  <option value="select">Sub-argument</option>
+                  <option value="select">Sub-explanation</option>
+                  <option value="select">Core-principle</option>
+                </select>
+              </div>
+
+              <div class="select2 bg-white w-1/2 text-xs p-2 shadow-lg">
+                <select name="selet_category" id="selet_category">
+                  <option value="select">Select Cetegory</option>
+                  <option value="select">Remark</option>
+                  <option value="select">Sub-argument</option>
+                  <option value="select">Sub-explanation</option>
+                  <option value="select">Core-principle</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:px-10 px-3">
+          <button class="text-xs bg-blue py-3 px-5 text-white rounded-lg">
+            + Sub-thread
+          </button>
+
+          <div class="bg-grayLike mt-10 rounded-t-3xl shadow-lg">
+            <p class="mb-3 pl-5 text-xs">Summary for Thread A</p>
+            <textarea
+              name="sub_thread1"
+              id="sub_thread1"
+              cols="18"
+              rows="4"
+              placeholder="Enter Text here"
+              class="bg-wwhite w-full pl-5 pt-3 rounded-t-3xl"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="thread lg:px-32 px-5 mb-40 mt-16 lg:flex items-center gap-10"
+    >
+      <div class="box3 lg:w-1/2 bg-grayWhite shadow-2xl rounded-2xl">
+        <div class="thread-head bg-black py-3 px-5 rounded-t-2xl shadow-lg">
+          <p class="text-white text-lg text-center">
+            Technical Project Management
+          </p>
+          <img src="./asset/more.svg" alt="know-more" class="ml-auto -mt-5" />
+        </div>
+
+        <div class="thread-article bg-grayWhite px-8 py-5">
+          <p class="font-light mb-5">
+            <span class="font-bold">Description:</span> Write a 300 - 400 word
+            article from your thread . Publish your understanding and showcase
+            your understanding to the entire world
+          </p>
+        </div>
+
+        <div class="thread-article-write lg:px-8 px-5 py-5">
+          <label for="title">Title</label> <br />
+          <input
+            type="text"
+            name="title"
+            class="bg-white shadow-lg py-3 w-full mt-3"
+          />
+
+          <div class="mt-5">
+            <label for="content">Content</label><br />
+            <textarea
+              name="content"
+              id="content"
+              cols="30"
+              rows="3"
+              class="shadow-lg w-full"
+              id="myTextarea"
+            ></textarea>
+
+            <script src="ckeditor/ckeditor.js"></script>
+            <script>
+              CKEDITOR.replace("content", { height: 400 });
+            </script>
+          </div>
+
+          <div class="grid lg:grid-cols-2 gap-5 mt-10">
+            <div class="">
+              <label for="category">Category</label> <br />
+              <select
+                name="category"
+                id="category"
+                class="w-full pl-5 py-3 shadow-lg"
+              >
+                <option value="">--Select--</option>
+                <option value="">Miscellaneous</option>
+                <option value="">Learn Ability</option>
+                <option value="">Value Leadership</option>
+                <option value="">Technology</option>
+                <option value="">Acumen</option>
+                <option value="">Managment</option>
+                <option value="">Business</option>
+              </select>
+            </div>
+
+            <div class="">
+              <label for="sub_category">Sub Category</label> <br />
+              <select
+                name="category"
+                id="category"
+                class="w-full pl-5 py-3 shadow-lg"
+              >
+                <option value="">--Select--</option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+              </select>
+            </div>
+
+            <div class="">
+              <label for="thumbnail">Thumbnail</label>
+              <input
+                type="file"
+                name="upload_file"
+                id="upload_file"
+                class="w-full bg-white shadow-lg py-2 pl-2"
+              />
+            </div>
+
+            <div class="">
+              <label for="thought">Thought Processs</label> <br />
+              <select
+                name="thought"
+                id="thought"
+                class="w-full pl-5 py-3 shadow-lg"
+              >
+                <option value="">--Select--</option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+              </select>
+            </div>
+          </div>
+
+          <div class="text-right text-xs text-white mt-5">
+            <button class="py-3 px-5 bg-blue rounded-lg mr-4">
+              <i class="fa-solid fa-file-arrow-down mr-3"></i>
+              Save Draft
+            </button>
+            <button class="py-3 px-5 bg-blue rounded-lg">
+              <i class="fa-solid fa-cloud-arrow-up mr-3"></i>Published
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="box4 lg:w-1/2 lg:mt-0 mt-10 bg-grayWhite shadow-2xl rounded-2xl"
+      >
+        <div class="thread-head bg-black py-3 px-5 rounded-t-2xl shadow-lg">
+          <p class="text-white text-lg text-center">4SA Method</p>
+          <img src="./asset/more.svg" alt="know-more" class="ml-auto -mt-5" />
+        </div>
+
+        <div class="thread-article bg-grayWhite px-8 py-5">
+          <p class="font-light">
+            <span class="font-bold">Description:</span>To Explore more read more
+          </p>
+        </div>
+
+        <div class="accordian px-5">
+          <div class="accordian-item mt-5">
+            <div
+              class="accordian-head flex items-center lg:px-10 px-3 py-2 bg-grayLike border-b-[1px]"
+            >
+              <img src="./asset/Vector.svg" alt="" class="accordian-btn" />
+              <p class="ml-5 text-lg font-bold">Introduction</p>
+            </div>
+            <div class="accordian-body hide lg:px-10 px-3">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+                harum excepturi officiis doloribus hic, beatae saepe dicta
+                delectus. Molestias minima impedit est sapiente possimus ad
+                pariatur placeat, iusto in beatae.
+              </p>
+              <p class="text-sm text-right mb-3"><a href="#">Read more</a></p>
+            </div>
+          </div>
+
+          <div class="accordian-item mt-5">
+            <div
+              class="accordian-head flex items-center lg:px-10 px-3 py-2 bg-thread border-y-[1px]"
+            >
+              <img src="./asset/Vector-down.svg" alt="" class="accordian-btn" />
+              <p class="ml-5 text-lg font-bold">Thread A</p>
+            </div>
+            <div class="accordian-body lg:px-10 px-3">
+              <div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatem necessitatibus quae, dolores dolorum aspernatur,
+                </p>
+                <p class="text-sm text-right my-3"><a href="#">Read more</a></p>
+              </div>
+
+              <div class="nested mt-4">
+                <div class="pl-5">
+                  <div
+                    class="nested-head py-2 pl-3 bg-grayLike border-y-[1px] border-l-[1px]"
+                  >
+                    Example
+                  </div>
+                  <p class="pl-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Totam, explicabo nobis et a deleniti sapiente, sint quia
+                    itaque quis fuga non magnam ullam, delectus sit asperiores
+                    tempora impedit praesentium. Nesciunt.
+                  </p>
+                  <p class="text-sm text-right my-3">
+                    <a href="#">Read more</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordian-item mt-5">
+            <div
+              class="accordian-head flex items-center lg:px-10 px-3 py-2 bg-grayLike border-y-[1px]"
+            >
+              <img src="./asset/Vector.svg" alt="" class="accordian-btn" />
+              <p class="ml-5 text-lg font-bold">Translation 1</p>
+            </div>
+
+            <div class="accordian-body hide lg:px-10 px-3">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+                harum excepturi officiis doloribus hic, beatae saepe dicta
+                delectus. Molestias minima impedit est sapiente possimus ad
+                pariatur placeat, iusto in beatae.
+              </p>
+              <p class="text-sm text-right mb-3"><a href="#">Read more</a></p>
+            </div>
+          </div>
+
+          <div class="accordian-item mt-5">
+            <div
+              class="accordian-head flex items-center lg:px-10 px-3 py-2 bg-thread border-y-[1px]"
+            >
+              <img src="./asset/Vector-down.svg" alt="" class="accordian-btn" />
+              <p class="ml-5 text-lg font-bold">Thread B</p>
+            </div>
+            <div class="accordian-body lg:px-10 px-3">
+              <div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatem necessitatibus quae, dolores dolorum aspernatur,
+                </p>
+                <p class="text-sm text-right my-3"><a href="#">Read more</a></p>
+              </div>
+
+              <div class="nested mt-4">
+                <div class="pl-5">
+                  <div
+                    class="nested-head py-2 pl-3 bg-grayLike border-y-[1px] border-l-[1px]"
+                  >
+                    Example
+                  </div>
+                  <p class="pl-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Totam, explicabo nobis et a deleniti sapiente, sint quia
+                    itaque quis fuga non magnam ullam, delectus sit asperiores
+                    tempora impedit praesentium. Nesciunt.
+                  </p>
+                  <p class="text-sm text-right my-3">
+                    <a href="#">Read more</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordian-item mt-5">
+            <div
+              class="accordian-head flex items-center lg:px-10 px-3 py-2 bg-grayLike border-y-[1px]"
+            >
+              <img src="./asset/Vector.svg" alt="" class="accordian-btn" />
+              <p class="ml-5 text-lg font-bold">Conclusion</p>
+            </div>
+            <div class="accordian-body hide lg:px-10 px-3">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+                harum excepturi officiis doloribus hic, beatae saepe dicta
+                delectus. Molestias minima impedit est sapiente possimus ad
+                pariatur placeat, iusto in beatae.
+              </p>
+              <p class="text-sm text-right mb-3"><a href="#">Read more</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="float-icon">
+      <div class="px-12 float-icon-body grid gap-4 mb-4">
+        <div
+          class="bg-blue w-20 h-20 flex justify-center items-center rounded-[50%]"
+        >
+          <img src="./asset/question-mark (2) 1.svg" alt="" />
+        </div>
+
+        <div
+          class="bg-blue w-20 h-20 flex justify-center items-center rounded-[50%]"
+        >
+          <img src="./asset/meeting 1.svg" alt="" />
+        </div>
+        <div
+          class="bg-blue w-20 h-20 flex justify-center items-center rounded-[50%]"
+        >
+          <img src="./asset/schedule (1) 1.svg" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script
+    src="https://kit.fontawesome.com/fc49c28ef9.js"
+    crossorigin="anonymous"
+  ></script>
+</html>
